@@ -2,7 +2,9 @@ import react, {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Alert from 'react-bootstrap/Alert';
+import { ListGroup } from "react-bootstrap";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function Frontpage(){
@@ -31,9 +33,13 @@ export default function Frontpage(){
         <div>
             <Container>
             <h1>My TODOs</h1>
+            <ListGroup as="ol" numbered>
                 {todos.map((item, index) => (
-                    <Alert onClose={() => removeToDo(index)} dismissible>{item.name}</Alert>
+                    <ListGroup.Item as="li">{item.name} &nbsp; &nbsp;
+                            <FontAwesomeIcon onClick={() => removeToDo(index)} icon={faTrash}/>
+                    </ListGroup.Item>
                 ))}
+            </ListGroup>
             </Container>
             <Container>
                 <Form.Label>TODO</Form.Label>
