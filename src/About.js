@@ -3,9 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container'
 
 
-export default function About(){
+export default function About() {
 
-    function sendMail(){
+    function sendMail() { //Alert when hitting the Contact button
         alert('Send email to: nicol20@student.sdu.dk');
     }
 
