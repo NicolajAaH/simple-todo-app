@@ -45,7 +45,7 @@ export default function Frontpage() {
             <Container>
                 <Form.Label>TODO</Form.Label>
                 <Form.Control type="text" placeholder="Enter TODO" value={text} onChange={(e) => setText(e.target.value)} />
-                <p>Click the button to submit the TODO</p>
+                <p>Click the button to submit the TODO - Click the trashcan to remove the TODO</p>
                 <Button default variant="primary" type="submit" onClick={addToDo}>Add TODO</Button>
             </Container>
         </div>
