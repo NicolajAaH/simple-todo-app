@@ -37,8 +37,18 @@
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 1000px){
   h1 {
     text-align: center;
   }
+}
+
+.color-nav {
+  background-color: #305177;
+  border-bottom: 1px solid black;
+}
+
+.navlink {
+  color: #5DACBD;
+  font-size: 20px;
 }

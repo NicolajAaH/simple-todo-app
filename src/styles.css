@@ -1,0 +1,38 @@
+body {
+    flex: 1;
+    background-color: #305177;
+}
+
+.item {
+    background-color: #5DACBD;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #5DACBD;
+    color: #305177;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #5DACBD;
+}
+
+.text {
+    font-size: 20px;
+    color: #5DACBD;
+}
+
+.icon {
+    float: right;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
