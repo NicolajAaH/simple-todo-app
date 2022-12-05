@@ -14,10 +14,10 @@ export default function About() {
         <div>
             <Container>
                 <h1 className="title" >About page</h1>
-                <p className="text" >This is a simple TODO app, which contains functionality for adding TODOs and removing TODOs</p>
+                <p className="text" >This is a simple ToDo app, which contains functionality for adding a ToDo and removing a ToDo</p>
                 <h2 className="text" >Contact information</h2>
                 <p className="text" >Email: nicol20@student.sdu.dk</p>
-                <Button  className="button" onClick={sendMail} variant="primary">Contact</Button>{' '}
+                <Button className="button" onClick={sendMail} variant="primary">Contact</Button>{' '}
             </Container>
         </div>
     );
