@@ -13,7 +13,7 @@ export default function Frontpage() {
 
     function removeToDo(index) { //Removes a ToDo
         setTodos(
-            todos.filter((item, i) => i !== index)
+            todos.filter((item, i) => i !== index) //Everything except the deleted ToDo
         );
     }
 
@@ -37,7 +37,7 @@ export default function Frontpage() {
                 <h1 className="title" >My ToDo List</h1>
                 <ListGroup as="ol" numbered>
                     {todos.map((item, index) => (
-                        <ListGroup.Item className="item" as="li">{item.name}
+                        <ListGroup.Item className="movie" as="li">{item.name}
                             <FontAwesomeIcon className="icon" onClick={() => removeToDo(index)} icon={faTrash} />
                         </ListGroup.Item>
                     ))}
