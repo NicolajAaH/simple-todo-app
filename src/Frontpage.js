@@ -20,13 +20,13 @@ export default function Frontpage() {
     const [text, setText] = useState([]); //Text of ToDo from input field
 
     function addToDo() { //Adds ToDo
-        const newItem = {
+        const newTodo = {
             name: text,
         };
 
         if (text.trim().length !== 0) { //Ensure no empty ToDos is added
             setText(""); //Empty the text input
-            setTodos((oldArray) => [...oldArray, newItem]); //Append another object to the ToDo array
+            setTodos((oldArray) => [...oldArray, newTodo]); //Append another object to the ToDo array
         }
     }
 
@@ -36,8 +36,8 @@ export default function Frontpage() {
             <Container>
                 <h1 className="title" >My ToDo List</h1>
                 <ListGroup as="ol" numbered>
-                    {todos.map((item, index) => (
-                        <ListGroup.Item className="movie" as="li">{item.name}
+                    {todos.map((todo, index) => (
+                        <ListGroup.Item className="todo" as="li">{todo.name}
                             <FontAwesomeIcon className="icon" onClick={() => removeToDo(index)} icon={faTrash} />
                         </ListGroup.Item>
                     ))}
